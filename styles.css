@@ -1,0 +1,92 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(45deg, #ff6f61, #d4a5a5, #61c0bf, #6b4226);
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+    color: white;
+    overflow: hidden;
+}
+/* Header */
+h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+}
+
+/* Canvas */
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(45deg, #ff6b6b, #f7d794);
+    }
+    25% {
+        background: linear-gradient(45deg, #f7d794, #ff6b6b);
+    }
+    50% {
+        background: linear-gradient(45deg, #ff6b6b, #eafcfc);
+    }
+    75% {
+        background: linear-gradient(45deg, #eafcfc, #ff6b6b);
+    }
+    100% {
+        background: linear-gradient(45deg, #ff6b6b, #f7d794);
+    }
+}
+
+#gameCanvas {
+    border: 5px solid #fff;
+    background: linear-gradient(45deg, #ff6b6b, #f7d794); /* Initial gradient */
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite; /* Animation to change the gradient */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color:black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+} 
+
+button:hover {
+    background: linear-gradient(45deg, #ff6f61, #d4a5a5, #ffbb00);
+}
+
+button:active {
+    background: linear-gradient(45deg, #ff6f61, #d4a5a5);
+    transform: scale(0.95);
+}
+
+
+button:hover {
+    background-color: #444;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.95);
+}
