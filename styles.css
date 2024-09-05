@@ -90,3 +90,26 @@ button:focus {
 button:active {
     transform: scale(0.95);
 }
+
+
+
+/* Make the canvas centered and responsive */
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+/* Add responsiveness for screens up to 760px */
+@media (max-width: 760px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
+
